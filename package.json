@@ -4,6 +4,7 @@
   "description": "pure react app will leave you with a clean app with a basic directory structure",
   "main": "app.js",
   "scripts": {
+    "prepare":"node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
