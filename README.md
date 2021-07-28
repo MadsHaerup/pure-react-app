@@ -1,6 +1,6 @@
-# clean-react-app
+# pure-react-app
 
-> clean-react-app will leave you with a clean and ready app with a basic directory structure.
+> pure-react-app will leave you with a clean and ready app with a basic directory structure.
 
 [Inspiration for directory structure](https://www.taniarascia.com/react-architecture-directory-structure/)
 

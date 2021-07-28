@@ -1,0 +1,22 @@
+{
+  "name": "pure-react-app",
+  "version": "1.0.0",
+  "description": "pure react app will leave you with a clean app with a basic directory structure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MadsHaerup/pure-react-app.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "MadsHaerup",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MadsHaerup/pure-react-app/issues"
+  },
+  "homepage": "https://github.com/MadsHaerup/pure-react-app#readme"
+}
