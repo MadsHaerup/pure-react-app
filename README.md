@@ -20,8 +20,10 @@ Src/
   * ~~reportWebVitals.js~~
   * ~~App.test.js~~
 
-  Before with npm create-react-app
+  #### Before with npm create-react-app
+
   ![create-react-app structure](./img/cra.png)
 
-  After with npx pure-react-app
+  #### After with npx pure-react-app
+  
   ![pure-react-app structure](./img/pure-react-app.png)
