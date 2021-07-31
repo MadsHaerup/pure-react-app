@@ -1,10 +1,19 @@
 {
   "name": "pure-react-app",
   "version": "1.0.0",
-  "description": "pure react app will leave you with a clean app with a basic directory structure",
-  "main": "app.js",
+  "description": "pure-react-app makes you ready to code instantly by providing you with a clean app with a basic directory structure.",
+  "main": "index.js",
+
+  "files": [
+    "index.js"
+  ],
+  "bin":{
+    "pure-react-app":"index.js"
+  },
+ 
   "scripts": {
-    "prepare":"node app.js",
+    "postinstall" :"node index.js", 
+    "install" :"node index.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

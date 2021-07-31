@@ -1,6 +1,8 @@
 # pure-react-app
 
-> pure-react-app will leave you with a clean and ready app with a basic directory structure.
+use: `npx pure-react-app`
+
+> pure-react-app makes you ready to code instantly by providing you with a clean app with a basic directory structure.
 
 [Inspiration for directory structure](https://www.taniarascia.com/react-architecture-directory-structure/)
 
@@ -12,3 +14,14 @@ Src/
   * store - Global Redux store
   * utils - Utilities, helpers, constants, and the like
   * views - Can also be called "pages", the majority of the app would be contained here
+
+  #### Removed documents: 
+  * ~~App.css~~
+  * ~~reportWebVitals.js~~
+  * ~~App.test.js~~
+
+  Before with npm create-react-app
+  ![create-react-app structure](./img/cra.png)
+
+  After with npx pure-react-app
+  ![pure-react-app structure](./img/pure-react-app.png)
