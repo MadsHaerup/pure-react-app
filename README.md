@@ -1,8 +1,11 @@
 # pure-react-app
 
-use: `npx pure-react-app`
+prerequisite: `npx create-react-app`
 
-> pure-react-app makes you ready to code instantly by providing you with a clean app with a basic directory structure.
+use: `npx pure-react-app`
+ 
+>  Automatically removes unnecessary cra boilerplate content, and sets up a basic directory structure.
+ 
 
 [Inspiration for directory structure](https://www.taniarascia.com/react-architecture-directory-structure/)
 
@@ -19,8 +22,9 @@ Src/
   * ~~App.css~~
   * ~~reportWebVitals.js~~
   * ~~App.test.js~~
+  * ~~logo.svg~~
 
-  #### Before with npm create-react-app
+  #### Before with npx create-react-app
 
   ![create-react-app structure](./img/cra.png)
 

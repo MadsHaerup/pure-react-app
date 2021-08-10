@@ -8,14 +8,12 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
   fs.mkdir(path.join("src/assets", 'img'),
   { recursive: true }, (err) => {
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 
   fs.mkdir(path.join("src", 'views'),
@@ -23,7 +21,6 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 
   fs.mkdir(path.join("src", 'components'),
@@ -31,7 +28,6 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 
   fs.mkdir(path.join("src", 'services'),
@@ -39,7 +35,6 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 
   fs.mkdir(path.join("src", 'store'),
@@ -47,7 +42,6 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 
   fs.mkdir(path.join("src", 'utils'),
@@ -55,7 +49,6 @@ fs.mkdir(path.join("src", 'assets'),
     if (err) {
       return console.error(err);
     }
-    console.log('Directory created successfully!');
   });
 // ────────────────────────────────────────────────────────────────────────────────
 
@@ -65,7 +58,6 @@ if (fs.existsSync('src/App.css')){
     if (err) {
         throw err;
     }
-    console.log(`item is deleted!`);
 });
 }else{
   return;
@@ -75,14 +67,17 @@ fs.rm('src/App.test.js', { recursive: true }, (err) => {
   if (err) {
       throw err;
   }
-  console.log(`item is deleted!`);
 });
 
 fs.rm('src/reportWebVitals.js', { recursive: true }, (err) => {
   if (err) {
       throw err;
   }
-  console.log(`item is deleted!`);
+});
+fs.rm('src/logo.svg', { recursive: true }, (err) => {
+  if (err) {
+      throw err;
+  }
 });
 
 // ────────────────────────────────────────────────────────────────────────────────
