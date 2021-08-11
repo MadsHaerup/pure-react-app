@@ -63,22 +63,65 @@ if (fs.existsSync('src/App.css')){
   return;
 }
 
-fs.rm('src/App.test.js', { recursive: true }, (err) => {
-  if (err) {
-      throw err;
-  }
-});
+if (fs.existsSync('src/App.test.js')){
+  fs.rm('src/App.test.js', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
 
-fs.rm('src/reportWebVitals.js', { recursive: true }, (err) => {
-  if (err) {
-      throw err;
-  }
-});
-fs.rm('src/logo.svg', { recursive: true }, (err) => {
-  if (err) {
-      throw err;
-  }
-});
+if (fs.existsSync('src/reportWebVitals.js')){
+  fs.rm('src/reportWebVitals.js', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
+
+if (fs.existsSync('src/logo.svg')){
+  fs.rm('src/logo.svg', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
+
+if (fs.existsSync('public/favicon.ico')){
+  fs.rm('public/favicon.ico', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
+
+if (fs.existsSync('public/logo192.png')){
+  fs.rm('public/logo192.png', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
+
+if (fs.existsSync('public/logo512.png')){
+  fs.rm('public/logo512.png', { recursive: true }, (err) => {
+    if (err) {
+        throw err;
+    }
+  });
+}else{
+  return;
+}
 
 // ────────────────────────────────────────────────────────────────────────────────
 
@@ -132,6 +175,36 @@ try {
   console.error(err)
 }
 
+const htmlIndex = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Pure React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+`;
 
+try {
+  const htmlIndexData = fs.writeFileSync('public/index.html', htmlIndex)
+  //file written successfully
+} catch (err) {
+  console.error(err)
+}
+
+console.log("succes! for more information please visit https://www.npmjs.com/package/pure-react-app")
 })();
 // ────────────────────────────────────────────────────────────────────────────────

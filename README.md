@@ -19,10 +19,16 @@ Src/
   * views - Can also be called "pages", the majority of the app would be contained here
 
   #### Removed documents: 
+  Src:
   * ~~App.css~~
   * ~~reportWebVitals.js~~
   * ~~App.test.js~~
   * ~~logo.svg~~
+
+  Public:
+  * ~~favicon.ico~~
+  * ~~logo192.png~~
+  * ~~logo512.png~~
 
   #### Before with npx create-react-app
 
