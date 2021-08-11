@@ -205,6 +205,40 @@ try {
   console.error(err)
 }
 
+const manifest = `
+{
+  "short_name": "React App",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "",
+      "sizes": "",
+      "type": ""
+    },
+    {
+      "src": "",
+      "type": "",
+      "sizes": ""
+    },
+    {
+      "src": "",
+      "type": "",
+      "sizes": ""
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
+`;
+
+try {
+  const manifestData =  fs.writeFileSync('public/manifest.json', manifest)
+} catch (error) {
+  console.error(err)
+}
+
 console.log("succes! for more information please visit https://www.npmjs.com/package/pure-react-app")
 })();
 // ────────────────────────────────────────────────────────────────────────────────
